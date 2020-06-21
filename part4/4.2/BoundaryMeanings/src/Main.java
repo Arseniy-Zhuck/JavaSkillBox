@@ -9,8 +9,8 @@ public class Main {
         System.out.println("Byte max: " + Byte.MAX_VALUE);
         System.out.println("Byte min: " + Byte.MIN_VALUE);
         System.out.println("Float max: " + Float.MAX_VALUE);
-        System.out.println("Float min: " + Float.MIN_VALUE);
+        System.out.println("Float min: " + (-Float.MAX_VALUE));
         System.out.println("Double max: " + Double.MAX_VALUE);
-        System.out.println("Double min: " + Double.MIN_VALUE);
+        System.out.println("Double min: " + (-Double.MAX_VALUE));
     }
 }
