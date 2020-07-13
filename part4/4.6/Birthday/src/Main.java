@@ -15,7 +15,7 @@ public class Main {
         Calendar currentCalendar = Calendar.getInstance();
         Date date = calendar.getTime();
         int i = 0;
-        while (date.getTime() < currentCalendar.getTime().getTime()) {
+        while (date.before(currentCalendar.getTime())) {
 
             System.out.println((i++) + " - " + dF.format(date));
             calendar.add(Calendar.YEAR, 1);
