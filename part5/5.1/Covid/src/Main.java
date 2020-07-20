@@ -34,10 +34,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        float[] temperatutes = getTemperaturesArray();
-        printTemperatures(temperatutes);
-        System.out.println("Средняя температура: " + averageTemperature(temperatutes));
-        System.out.println("Количество здоровых: " + healthyCount(temperatutes));
+        float[] temperatures = getTemperaturesArray();
+        printTemperatures(temperatures);
+        System.out.println("Средняя температура: " + averageTemperature(temperatures));
+        System.out.println("Количество здоровых: " + healthyCount(temperatures));
     }
 
 }
