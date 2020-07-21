@@ -18,5 +18,8 @@ public class Main {
             if (EMailSet.correctCommand(command)) eMailSet.makeCommand(command);
             else System.out.println("Wrong command");
         }
+        bufferedReader.close();
+        streamReader.close();
+
     }
 }
