@@ -5,12 +5,14 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static void printToDoList(ArrayList<String> arrayList) {
-        System.out.println(String.format("You have %d deals you must finish.", arrayList.size()));
-        for (String deal : arrayList) System.out.println(deal);
+    public static ArrayList<String> toDoList;
+
+    public static void printToDoList() {
+        System.out.println(String.format("You have %d deals you must finish.", toDoList.size()));
+        for (String deal : toDoList) System.out.println(deal);
     }
 
-    public static void addDeal(ArrayList<String> arrayList, String[] params) {
+    public static void addDeal(String[] params) {
         String s = "";
         try {
             s = params[1];
@@ -37,20 +39,18 @@ public class Main {
                 return;
             }
             try {
-                arrayList.add(number, deal);
+                toDoList.add(number, deal);
             } catch (IndexOutOfBoundsException e) {
                 System.out.println("ERROR!!! You write wrong number");
                 return;
             }
         } else {
             if (params.length == 3) s += " " + params[2];
-            arrayList.add(s);
+            toDoList.add(s);
         }
     }
 
-    public static void editDeal(ArrayList<String> arrayList, String[] params) {
-
-
+    public static void editDeal(String[] params) {
         String s = "";
         try {
             s = params[1];
@@ -75,14 +75,14 @@ public class Main {
         }
 
         try {
-            arrayList.set(number, deal);
+            toDoList.set(number, deal);
         } catch (IndexOutOfBoundsException e) {
             System.out.println("ERROR!!! You write wrong number");
             return;
         }
     }
 
-    public static void deleteDeal(ArrayList<String> arrayList, String[] params) {
+    public static void deleteDeal(String[] params) {
         if (params.length > 2) {
             System.out.println("ERROR!!! DELETE command must have onle number");
             return;
@@ -105,7 +105,7 @@ public class Main {
         }
 
         try {
-            arrayList.remove(number);
+            toDoList.remove(number);
         } catch (IndexOutOfBoundsException e) {
             System.out.println("ERROR!!! You write wrong number");
             return;
@@ -114,7 +114,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        ArrayList<String> toDoList = new ArrayList<>();
+        toDoList = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for (;;) {
             System.out.println("/-----------------------------------------------------------------------------/");
@@ -128,10 +128,10 @@ public class Main {
             System.out.println("/-----------------------------------------------------------------------------/");
             String command = reader.readLine().trim();
             String[] commandComponents = command.split(" ", 3);
-            if (commandComponents[0].equals("LIST")) printToDoList(toDoList);
-            else if (commandComponents[0].equals("ADD")) addDeal(toDoList, commandComponents);
-            else if (commandComponents[0].equals("EDIT")) editDeal(toDoList, commandComponents);
-            else if (commandComponents[0].equals("DELETE")) deleteDeal(toDoList, commandComponents);
+            if (commandComponents[0].equals("LIST")) printToDoList();
+            else if (commandComponents[0].equals("ADD")) addDeal(commandComponents);
+            else if (commandComponents[0].equals("EDIT")) editDeal(commandComponents);
+            else if (commandComponents[0].equals("DELETE")) deleteDeal(commandComponents);
             else if (commandComponents[0].equals("EXIT")) break;
             else System.out.println("You write uknown command");
 
