@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4132ebd-5456-4073-8000-6c50d0262031" name="Default Changelist" comment="" />
+    <list default="true" id="90b1e652-4b5a-4869-b5b5-812044a7698a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +41,7 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1ezk1LFOYDbWaSpC2LHgYABevKL" />
+  <component name="ProjectId" id="1f0kBoNrapeY6np3FnLLz6Era5J" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -52,12 +52,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="toDoList" />
+      <module name="eMails" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -73,11 +72,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e4132ebd-5456-4073-8000-6c50d0262031" name="Default Changelist" comment="" />
-      <created>1595331592295</created>
+      <changelist id="90b1e652-4b5a-4869-b5b5-812044a7698a" name="Default Changelist" comment="" />
+      <created>1595362264528</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595331592295</updated>
+      <updated>1595362264528</updated>
     </task>
     <servers />
   </component>
@@ -91,36 +90,27 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="643" y="402" width="229" height="247" key="#Notifications" timestamp="1595333533111">
+    <state x="568" y="236" width="380" height="578" key="#com.intellij.ide.util.MemberChooser" timestamp="1595364308855">
       <screen x="0" y="0" width="1920" height="1047" />
     </state>
-    <state x="643" y="402" width="229" height="247" key="#Notifications/0.0.1920.1047@0.0.1920.1047" timestamp="1595333533111" />
-    <state x="543" y="285" width="430" height="481" key="FileChooserDialogImpl" timestamp="1595333522372">
+    <state x="568" y="236" width="380" height="578" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1047@0.0.1920.1047" timestamp="1595364308855" />
+    <state width="1352" height="255" key="GridCell.Tab.0.bottom" timestamp="1595364744703">
       <screen x="0" y="0" width="1920" height="1047" />
     </state>
-    <state x="543" y="285" width="430" height="481" key="FileChooserDialogImpl/0.0.1920.1047@0.0.1920.1047" timestamp="1595333522372" />
-    <state width="1352" height="435" key="GridCell.Tab.0.bottom" timestamp="1595360148002">
+    <state width="1352" height="255" key="GridCell.Tab.0.bottom/0.0.1920.1047@0.0.1920.1047" timestamp="1595364744703" />
+    <state width="1352" height="255" key="GridCell.Tab.0.center" timestamp="1595364744696">
       <screen x="0" y="0" width="1920" height="1047" />
     </state>
-    <state width="1352" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1047@0.0.1920.1047" timestamp="1595360148002" />
-    <state width="1352" height="435" key="GridCell.Tab.0.center" timestamp="1595360148002">
+    <state width="1352" height="255" key="GridCell.Tab.0.center/0.0.1920.1047@0.0.1920.1047" timestamp="1595364744696" />
+    <state width="1352" height="255" key="GridCell.Tab.0.left" timestamp="1595364744694">
       <screen x="0" y="0" width="1920" height="1047" />
     </state>
-    <state width="1352" height="435" key="GridCell.Tab.0.center/0.0.1920.1047@0.0.1920.1047" timestamp="1595360148002" />
-    <state width="1352" height="435" key="GridCell.Tab.0.left" timestamp="1595360148001">
+    <state width="1352" height="255" key="GridCell.Tab.0.left/0.0.1920.1047@0.0.1920.1047" timestamp="1595364744694" />
+    <state width="1352" height="255" key="GridCell.Tab.0.right" timestamp="1595364744700">
       <screen x="0" y="0" width="1920" height="1047" />
     </state>
-    <state width="1352" height="435" key="GridCell.Tab.0.left/0.0.1920.1047@0.0.1920.1047" timestamp="1595360148001" />
-    <state width="1352" height="435" key="GridCell.Tab.0.right" timestamp="1595360148002">
-      <screen x="0" y="0" width="1920" height="1047" />
-    </state>
-    <state width="1352" height="435" key="GridCell.Tab.0.right/0.0.1920.1047@0.0.1920.1047" timestamp="1595360148002" />
-    <state x="264" y="162" key="SettingsEditor" timestamp="1595333525156">
-      <screen x="0" y="0" width="1920" height="1047" />
-    </state>
-    <state x="264" y="162" key="SettingsEditor/0.0.1920.1047@0.0.1920.1047" timestamp="1595333525156" />
+    <state width="1352" height="255" key="GridCell.Tab.0.right/0.0.1920.1047@0.0.1920.1047" timestamp="1595364744700" />
   </component>
 </project>
