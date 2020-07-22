@@ -22,7 +22,7 @@ public class Main {
         }
     }
 
-    public static boolean checkFIO(String s) {
+    public static boolean isFIO(String s) {
         return Pattern.compile("[А-ЯЁ&&[^ЪЬЫ]][а-яё]+\\s[А-ЯЁ&&[^ЪЬЫ]][а-яё]+\\s" +
                 "[А-ЯЁ&&[^ЪЬЫ]][а-яё]+$").matcher(s).matches();
     }
@@ -31,7 +31,7 @@ public class Main {
         return phone.replaceAll("[^0-9]","");
     }
 
-    public static Boolean checkPhone(String phone) {
+    public static Boolean isPhone(String phone) {
         return Pattern.compile("[0-9]{11}").matcher(phone).matches();
     }
 
@@ -57,7 +57,7 @@ public class Main {
                 printPhoneBook();
                 break;
             }
-            if (checkFIO(command)) {
+            if (isFIO(command)) {
                 if (phoneBook.containsKey(command)) {
                     System.out.println(command + " has phonenumber " + phoneBook.get(command));
                     continue;
@@ -69,7 +69,7 @@ public class Main {
                     phoneBook.put(command, phonenumber);
                     continue;
                 }
-            } else if (checkPhone(formatPhone(command))) {
+            } else if (isPhone(formatPhone(command))) {
                 String phone = formatPhone(command);
                 if (phoneBook.containsValue(phone)) {
                     System.out.println(getNodeByPhone(phone).getKey() + " has phonenumber " + phone);
@@ -81,7 +81,7 @@ public class Main {
                     do {
                         System.out.println("Print correct FIO, please");
                         FIO = bufferedReader.readLine().trim();
-                        flag = checkFIO(FIO);
+                        flag = isFIO(FIO);
                     } while (!flag);
                     phoneBook.put(FIO,phone);
                     continue;
