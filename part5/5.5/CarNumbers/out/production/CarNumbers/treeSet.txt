@@ -1,0 +1,13 @@
+true 11300
+true 1
+true 30300
+true 10700
+true 10900
+false 27900
+false 13700
+false 16900
+false 13800
+false 17800
+false 16000
+false 27168
+false 14667

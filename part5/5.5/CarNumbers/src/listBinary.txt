@@ -1,0 +1,13 @@
+true 64100
+true 18542
+true 91800
+true 37300
+true 34500
+false 91700
+false 35600
+false 37400
+false 34900
+false 51300
+false 37700
+false 1074940
+false 47772
