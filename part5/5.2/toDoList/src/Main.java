@@ -5,14 +5,14 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static ArrayList<String> toDoList;
+    public ArrayList<String> toDoList;
 
-    public static void printToDoList() {
+    public void printToDoList() {
         System.out.println(String.format("You have %d deals you must finish.", toDoList.size()));
         for (String deal : toDoList) System.out.println(deal);
     }
 
-    public static void addDeal(String[] params) {
+    public void addDeal(String[] params) {
         String s = "";
         try {
             s = params[1];
@@ -50,7 +50,7 @@ public class Main {
         }
     }
 
-    public static void editDeal(String[] params) {
+    public void editDeal(String[] params) {
         String s = "";
         try {
             s = params[1];
@@ -82,7 +82,7 @@ public class Main {
         }
     }
 
-    public static void deleteDeal(String[] params) {
+    public void deleteDeal(String[] params) {
         if (params.length > 2) {
             System.out.println("ERROR!!! DELETE command must have onle number");
             return;
@@ -113,8 +113,11 @@ public class Main {
 
     }
 
-    public static void main(String[] args) throws IOException {
+    public Main() {
         toDoList = new ArrayList<>();
+    }
+
+    public void programCicle() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for (;;) {
             System.out.println("/-----------------------------------------------------------------------------/");
@@ -134,8 +137,12 @@ public class Main {
             else if (commandComponents[0].equals("DELETE")) deleteDeal(commandComponents);
             else if (commandComponents[0].equals("EXIT")) break;
             else System.out.println("You write uknown command");
-
         }
+    }
+
+    public static void main(String[] args) throws IOException {
+        Main mainProgram = new Main();
+        mainProgram.programCicle();
     }
 
 
