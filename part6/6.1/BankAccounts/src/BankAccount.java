@@ -59,4 +59,14 @@ public class BankAccount {
     protected String getKind() {
         return "simple";
     }
+
+    public boolean send(BankAccount receiver, double amount) {
+        try {
+            this.withDrawMoney(amount);
+        } catch (IllegalArgumentException e) {
+            return false;
+        }
+        receiver.depositMoney(amount);
+        return true;
+    }
 }

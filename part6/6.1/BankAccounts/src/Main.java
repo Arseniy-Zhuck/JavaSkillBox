@@ -30,6 +30,12 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             System.out.println(myAccounts[i]);
         }
+        BankAccount creditAccount = new BankAccount("Долбанные кредиты", 0);
+        for (int i = 0; i < 3; i++) {
+            if (myAccounts[i].send(creditAccount, 7000))
+                System.out.println(myAccounts[i] + " платеж 7000 выполнен");
+            else System.out.println(myAccounts[i] + " платеж 7000 НЕ выполнен");
+        }
     }
 
 }
