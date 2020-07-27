@@ -35,19 +35,19 @@ public class BankAccount {
         else amount -= money;
     }
 
-    public double getAmount() {
+    private double getAmount() {
         return amount;
     }
 
-    public String getOwner() {
+    private String getOwner() {
         return owner;
     }
 
-    public void setOwner(String owner) {
-        this.owner = owner;
-    }
+//    public void setOwner(String owner) {
+//        this.owner = owner;
+//    }
 
-    public String getAccount() {
+    protected String getAccount() {
         return account;
     }
 
