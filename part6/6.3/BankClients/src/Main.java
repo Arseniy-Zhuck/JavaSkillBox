@@ -28,7 +28,7 @@ public class Main {
             try {
                 bankClient.withDrawMoney(100000);
             } catch (IllegalArgumentException e) {
-                System.out.println(bankClient.getAccount()+ "  " + e.getMessage());
+                System.out.println(e.getMessage());
             }
         }
     }
