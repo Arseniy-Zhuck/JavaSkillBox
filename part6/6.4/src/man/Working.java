@@ -36,4 +36,9 @@ public class Working {
             return man.equals(man1);
         } else return false;
     }
+
+    @Override
+    public String toString() {
+        return man.toString() + " - " + employee.printSalary();
+    }
 }

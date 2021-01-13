@@ -8,5 +8,7 @@ public interface Employee extends Comparable<Employee>{
         return getMonthSalary().compareTo(o.getMonthSalary());
     }
 
-
+    default String printSalary() {
+        return getMonthSalary().toString();
+    }
 }

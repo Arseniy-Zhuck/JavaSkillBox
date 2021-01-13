@@ -10,7 +10,7 @@ public class Manager implements Employee{
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return company.hashCode();
     }
 
     @Override

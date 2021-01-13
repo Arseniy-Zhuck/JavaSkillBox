@@ -1,5 +1,6 @@
 package man;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Man {
@@ -46,5 +47,13 @@ public class Man {
                     lastName.equals(man1.lastName) &&
                     dateOfBirth.equals(man1.dateOfBirth);
         } else return false;
+    }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat sDF = new SimpleDateFormat("yyyy.MM.dd");
+
+        return surName + " " + name.toCharArray()[0] + ". " + lastName.toCharArray()[0] + ". " +
+                sDF.format(dateOfBirth.getTime());
     }
 }

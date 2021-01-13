@@ -94,9 +94,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1002" y="279" width="380" height="578" key="#com.intellij.ide.util.MemberChooser" timestamp="1610466898619">
+    <state x="1002" y="279" width="380" height="578" key="#com.intellij.ide.util.MemberChooser" timestamp="1610476599897">
       <screen x="0" y="0" width="1920" height="1047" />
     </state>
-    <state x="1002" y="279" width="380" height="578" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1047@0.0.1920.1047" timestamp="1610466898619" />
+    <state x="1002" y="279" width="380" height="578" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1047@0.0.1920.1047" timestamp="1610476599897" />
+    <state width="1878" height="255" key="GridCell.Tab.0.bottom" timestamp="1610520156850">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="255" key="GridCell.Tab.0.bottom/0.0.1920.1047@0.0.1920.1047" timestamp="1610520156850" />
+    <state width="1878" height="255" key="GridCell.Tab.0.center" timestamp="1610520156849">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="255" key="GridCell.Tab.0.center/0.0.1920.1047@0.0.1920.1047" timestamp="1610520156849" />
+    <state width="1878" height="255" key="GridCell.Tab.0.left" timestamp="1610520156849">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="255" key="GridCell.Tab.0.left/0.0.1920.1047@0.0.1920.1047" timestamp="1610520156849" />
+    <state width="1878" height="255" key="GridCell.Tab.0.right" timestamp="1610520156850">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="255" key="GridCell.Tab.0.right/0.0.1920.1047@0.0.1920.1047" timestamp="1610520156850" />
   </component>
 </project>
